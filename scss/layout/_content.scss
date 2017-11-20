@@ -1,0 +1,627 @@
+
+@import "kriger/main";
+$background: none;
+
+$font_ptSans: 'PT Sans', sans-serif;
+$font_tinos: 'Tinos', serif;
+
+.content{
+	position:relative;
+	margin-top:30px;
+
+	.service{
+		margin-bottom: 85px;
+		text-align:center;
+
+		a{
+			text-decoration:none;
+		}
+		.serviceItem{
+			position:relative;
+			min-height:300px;
+			width:100%;
+			
+
+			img{
+				margin: 20px auto 0 auto;
+			}
+			h1{
+				font: bold 24px $font_ptSans;
+				color:#ffffff;
+				text-transform:uppercase;
+				margin-bottom:25px;
+				text-decoration:none;
+			}
+			p{
+				font: 16px $font_ptSans;
+				color:#ffffff;
+				text-decoration:none;
+			}
+			a{
+				width:100%;
+				height:100%;
+				text-decoration:none;
+			}
+		}
+	}
+
+	.reclame{
+		margin-bottom:55px;
+		p{
+			font:18px TimesNewRoman,Times New Roman,Times;
+			color:#4c4c4c;
+		}
+		.reclameText{
+			margin-bottom: 30px;
+		}
+		.visiogr{
+			position:relative;
+			text-align:center;
+
+			p{
+				font:20px $font_ptSans;
+				margin-bottom:0;
+			}
+			h1{
+				margin-top: 0;
+				margin-bottom:0;
+				font:bold 22px $font_ptSans;
+				text-transform:uppercase;
+			}
+			img{
+				width:auto;
+				height:auto;
+				margin-right:30px;
+			}
+		}
+	}
+	.advantage{
+		background: #e0f0ff;
+		margin-bottom: 80px;
+		padding-top:30px;
+		text-align:center;
+		.advantageItem{
+			// width:auto;
+			.advantageItemImg{
+				height:100px;
+			}		
+		}
+
+		h1{
+			margin-bottom:50px;
+			text-align:center;
+			font:bold 30px $font_ptSans;
+			color:#5a6d7f;
+			text-transform:uppercase;
+		}
+		p{
+			vertical-align:bottom;
+			font:18px $font_ptSans;
+			color:#5a6d7f;
+
+		}
+	}
+
+	.feedBack{
+		position:relative;
+		text-align:center;
+		margin-bottom:85px;
+
+		.feedBackContainer{
+			padding:0;
+		}
+
+		.feedBackList, .feedBackButtL, .feedBackButtR{
+			display:inline-block;
+			vertical-align:middle;
+		}
+		
+		.feedBackButtL, .feedBackButtR{	
+			
+			button{
+				width:36px;
+				height:36px;
+				border:none;
+				background:#5a6d7f;
+				text-align:center;
+			}
+
+			button:hover{
+				background:#4d5f71;
+			}
+		}
+
+		.feedBackButtL{
+			// margin-right:15px;
+		}
+		.feedBackButtR{
+			// margin-left:15px;
+		}
+
+		.feedBackList{
+			width:90%;
+			text-align:center;
+			.feedBackItem{
+				position:relative;
+				border:1px solid #cccccc;
+				// width:348px;
+				height:275px;
+				// margin: 10px;
+				margin-top:10px;
+				margin-bottom:10px;
+				padding:20px;
+
+
+				p{
+					font: italic 18px $font_ptSans;
+					color:#797979;
+				}
+				
+				h1{
+					position:absolute;
+					font: bold 18px $font_ptSans;
+					color:#4c4c4c;
+					text-transform:none;
+					bottom:0;
+					// right:20px;
+					text-align:center;
+					width:100%;
+					padding-right: 20px;
+				}
+				
+				.leftQuote, .rightQuote{
+					// border:1px solid black;
+					max-height:40px;
+					font: bold 60px $font_tinos;
+					color: #5a6d7f;
+					margin:0 0 0 0;
+					padding:0;
+				}
+
+				.leftQuote{
+					text-align: left;
+				}
+				.rightQuote{
+					text-align:right;
+				}
+			}
+		}
+
+		h1{
+			font: bold 30px $font_ptSans;
+			color: #505050;
+			text-transform:uppercase;
+		}
+
+		.moreReviewButt{
+			margin-top:20px;
+			button{
+				background:none;
+				border: 1px solid #5a6d7f;
+				border-radius:5px;
+				width: 165px;
+				height: 35px;
+				font: 16px $font_ptSans;
+				color:#5a6d7f;
+			}
+			button:hover{
+				color:#ffffff;
+				background:#5a6d7f;
+			}
+		}
+		
+	}
+
+	.appointment{
+		background:#e8f2ef;
+		padding-top:30px;
+		padding-bottom:30px;
+		h1{
+			margin-bottom: 30px;
+			margin-top:30px;
+			text-align:center;
+			font: bold 30px $font_ptSans;
+			color: #3e6459;
+			text-transform:uppercase;
+
+			background: linear-gradient(90deg, #56b194 55%, #539fa5 55%);
+  			-webkit-background-clip: text;
+  			-webkit-text-fill-color: transparent;
+		}
+
+		.appointmentItem{
+			margin-bottom:18px;
+		}
+
+		input{
+			width: 100%;
+			height: 50px;
+			padding-left: 33px;
+			font:18px $font_ptSans;
+			border:1px solid #d9d9d9;
+
+			background-image: none;   
+			background-repeat: no-repeat; /*Убираем повтор изображения*/   
+			background-position: 7.5px 15px; /*Позиционируем*/   
+			outline: none; /*убираем стандартную обводку браузера*/   
+			-moz-border-radius: 5px; /*закругляем углы для Mozilla*/  
+			-webkit-border-radius: 5px; /*закругляем углы для Chrome, Safari*/   
+			// border-radius: 5px; /*закругляем углы для остальных браузеров*/  
+			// padding-left: 20px; /*отступ слева от ввода, чтобы текст не был на картинке(выбирать по размеру картинки)*/  
+			// height: 20px; /*высота строки ввода*/   
+			// font-size: 13px; /*размер шрифта*/
+
+			// padding: 0 0 0 30px;
+		}
+
+		textarea{
+			width: 100%;
+			padding: 12px 0 85px 29px;
+
+			font: 18px $font_ptSans;
+			border: 1px solid #d9d9d9;
+			align:top;
+			resize:none;
+		}
+
+		p{
+			font: 16px $font_ptSans;
+			color:#428397;
+		}
+
+		button{
+			width:225px;
+			height:53px;
+
+			background:#52ceaa;
+			border:none;
+			border-radius: 5px;
+			font: 20px $font_ptSans;
+			color:#ffffff;
+		}
+		button:hover{
+			background:#55ac99;
+		}
+
+		.leftArrowBtn{
+			background:url(../img/arrowLeft_2.png) no-repeat;
+			width:30px;
+			height:26px;
+
+		}
+		.leftArrowBtn:hover{
+			background:url(../img/arrowLeft_2.png) no-repeat;
+		}
+
+		redColor{ //для символа *
+			color:#f55656;
+		}
+	}
+}
+
+
+
+@mixin smallScreenContent{
+	.content{
+		.service{
+			position:relative;
+			margin-left:10px;
+			margin-right:10px;
+
+			a{
+				text-decoration:none;
+			}
+			.serviceItem{
+				min-height:350px;
+				margin: 0 10px 0 10px;
+			}
+		}
+
+		.feedBack{
+			width:100%;
+
+			.feedBackContainer{
+
+			}
+
+			.feedBackList, .feedBackButtL, .feedBackButtR{
+				display:block;
+			}
+
+			.feedBackButtL, .feedBackButtR{	
+
+
+			}
+
+			.feedBackButtL{
+
+			}
+			.feedBackButtR{
+
+			}
+
+			.feedBackList{
+				.feedBackItem{
+					height:auto;
+					
+					h1{
+					}
+
+					.leftQuote, .rightQuote{
+
+					}
+
+					.leftQuote{
+
+					}
+					.rightQuote{
+						margin-bottom:20px;
+					}
+				}
+			}
+
+			.moreReviewButt{
+				
+			}
+		}
+
+		.advantage{
+			background: #e0f0ff;
+			margin-bottom: 80px;
+			padding-top:30px;
+			text-align:center;
+			.advantageItem{
+				margin-top:50px;
+				height:auto;
+				.advantageItemImg{
+
+				}		
+			}
+
+			h1{
+				// margin-bottom:100px;
+				text-align:center;
+				text-transform:uppercase;
+				margin-bottom:0;
+			}
+			p{
+				margin-top:0;
+				vertical-align:bottom;
+				font:18px $font_ptSans;
+				color:#5a6d7f;
+			}
+		}
+
+		.appointment{
+			padding-top:30px;
+			padding-bottom:30px;
+			h1{
+				margin-bottom: 30px;
+				margin-top:30px;
+			}
+
+			.appointmentItem{
+				margin-bottom:18px;
+			}
+
+			input{
+				width: 100%;
+				height: 50px;
+				padding-left: 33px;
+
+			}
+
+			textarea{
+				// width: 100%;
+				// padding: 12px 0 20px 29px;
+
+				// align:top;
+				// resize:none;
+			}
+
+			p{
+				font: 16px $font_ptSans;
+				color:#428397;
+			}
+
+			button{
+				width:225px;
+				height:53px;
+
+				background:#52ceaa;
+				border:none;
+				border-radius: 5px;
+				font: 20px $font_ptSans;
+				color:#ffffff;
+			}
+			button:hover{
+				background:#55ac99;
+			}
+
+			.leftArrowBtn{
+				display:none;
+			}
+		}
+	}
+}
+
+@mixin mediumScreenContent{
+	.content{
+		.service{
+			margin-bottom: 85px;
+
+			a{
+				text-decoration:none;
+			}
+			.serviceItem{
+				min-height:350px;
+				margin: 0 10px 0 10px;
+			}
+		}
+
+		.feedBack{
+			width:100%;
+
+			.feedBackContainer{
+
+			}
+
+			.feedBackList, .feedBackButtL, .feedBackButtR{
+				display:block;
+			}
+
+			.feedBackButtL, .feedBackButtR{	
+
+
+			}
+
+			.feedBackButtL{
+
+			}
+			.feedBackButtR{
+
+			}
+
+			.feedBackList{
+				.feedBackItem{
+					height:auto;
+					
+					h1{
+					}
+
+					.leftQuote, .rightQuote{
+
+					}
+
+					.leftQuote{
+
+					}
+					.rightQuote{
+						margin-bottom:20px;
+					}
+				}
+			}
+
+			.moreReviewButt{
+				
+			}
+		}
+
+		.advantage{
+			background: #e0f0ff;
+			margin-bottom: 80px;
+			padding-top:30px;
+			text-align:center;
+			.advantageItem{
+				margin-top:50px;
+				.advantageItemImg{
+					height:100px;
+				}		
+			}
+
+			h1{
+				// margin-bottom:100px;
+				text-align:center;
+				text-transform:uppercase;
+				margin-bottom:0;
+			}
+			p{
+				margin-top:0;
+				vertical-align:bottom;
+				font:18px $font_ptSans;
+				color:#5a6d7f;
+			}
+		}
+		
+		.appointment{
+			padding-top:30px;
+			padding-bottom:30px;
+			h1{
+				margin-bottom: 30px;
+				margin-top:30px;
+			}
+
+			.appointmentItem{
+				margin-bottom:18px;
+			}
+
+			input{
+				width: 100%;
+				height: 50px;
+				padding-left: 33px;
+
+			}
+
+			textarea{
+				// width: 100%;
+				// padding: 12px 0 20px 29px;
+
+				// align:top;
+				// resize:none;
+			}
+
+			p{
+				font: 16px $font_ptSans;
+				color:#428397;
+			}
+
+			button{
+				width:225px;
+				height:53px;
+
+				background:#52ceaa;
+				border:none;
+				border-radius: 5px;
+				font: 20px $font_ptSans;
+				color:#ffffff;
+			}
+			button:hover{
+				background:#55ac99;
+			}
+
+			.leftArrowBtn{
+				display:none;
+			}
+			.leftArrowBtn:hover{
+
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 320px){
+	@include smallScreenContent;
+	
+	.content{
+		.service{
+			margin-bottom: 85px;
+
+			a{
+				text-decoration:none;
+			}
+			.serviceItem{
+				min-height:350px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 320px) and(max-width: 600px){
+	@include smallScreenContent;
+}
+
+@media screen and (min-width: 601px) and (max-width: 806px){
+	@include mediumScreenContent;
+}
+
+@media screen and (min-width: 807px) and (max-width: 991px){
+	@include mediumScreenContent;
+}
+
+@media screen and(min-width:  992px) and (max-width: 1060px){
+
+}
+
+@media screen and(min-width:  992px) and (max-width: 1200px){
+
+}

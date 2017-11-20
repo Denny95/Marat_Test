@@ -1,0 +1,168 @@
+@import "kriger/main";
+
+$font_ptSans: 'PT Sans', sans-serif;
+
+.media{
+	// display: inline-block;
+	// width: 100%;
+	// margin: 0 auto;
+}
+
+.carousel{
+    // background: #2f4357;
+    // margin-top: 20px;
+    // min-height: 430px;
+
+    width: 100%;
+    height: 100%;
+}
+.carousel .item{
+	width: 100%;
+    // min-height: 680px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+    // min-height: 550px;
+    // height: 400px;
+    // overflow: auto;
+    position:relative;
+
+    .carousel-caption{
+        // position:relative;
+        left:0;
+        // margin: 0 0 0 0;
+        // padding: 0 0 0 0;
+        width:100%;
+        // .description{
+        text-align: left;
+        vertical-align:bottom;
+            .container{
+                margin-top:0;
+                top:0;
+                padding-top: 0;
+                // h3{
+                //     margin-top:0;
+                //     font:bold 38px $font_ptSans;
+                // }
+            }
+
+            h3{
+                margin-top:0;
+                font:bold 38px $font_ptSans;
+            }
+            ul{
+                padding-left: 17px;
+                li{
+                    font: 18px $font_ptSans;
+                }
+            }
+
+        // }
+    }
+    
+}
+
+.carousel-caption{
+
+}
+.carousel .item img{
+    margin: 0 auto; /* Align slide image horizontally center */
+    width:100%;
+    height:100%;
+
+}
+.bs-example{
+    position: relative;
+    // min-height:420px;
+}
+
+@mixin smallScreenHeader{
+    .carousel .item{
+        .carousel-caption{
+            margin: 0 0 0 0;
+            width:100%;
+            height:100%;
+
+            text-align: left;
+            vertical-align:bottom;
+            h3{
+                font-size:18px;
+                margin:15px 0 0 15px;
+            }
+
+            ul{
+                padding-left: 17px;
+                margin:0;
+                li{
+                    display:inline;
+                    font-size:10px;
+                    margin-right:10px;
+                }
+            }
+        }
+    }
+}
+
+@mixin mediumScreenHeader{
+    @include smallScreenHeader;
+    .carousel .item{
+        .carousel-caption{
+            margin: 0 0 0 0;
+            width:100%;
+            height:100%;
+
+            text-align: left;
+            vertical-align:bottom;
+            h3{
+                font-size:24px;
+                margin:15px 0 0 15px;
+            }
+
+            ul{
+                padding-left: 17px;
+                margin:15px 0 0 0;
+                li{
+                    margin-right:10px;
+                    display:inline;
+                    font-size:16px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 420px){
+    @include smallScreenHeader;
+      .carousel .item{
+        .carousel-caption{
+             line-height:0;
+            h3{
+                font-size:13px;
+                margin-top:5px;
+                margin-bottom:0;
+                line-height:0.2;
+            }
+
+            ul{
+                li{
+                    display:block;
+                    line-height:0.2;
+                    font: 10px $font_ptSans;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 420px) and(max-width: 700px){
+    @include smallScreenHeader;
+}
+
+@media screen and (min-width: 701px) and (max-width: 806px){
+    @include mediumScreenHeader;
+}
+
+@media screen and (min-width: 807px) and (max-width: 991px) {
+    @include mediumScreenHeader;
+}
+
+@media screen and(min-width:  992px) and (max-width: 1060px){
+    @include mediumScreenHeader;
+}

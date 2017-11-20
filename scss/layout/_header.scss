@@ -1,0 +1,232 @@
+/*
+================================================================================
+|                                     HEADER                                   |
+================================================================================
+*/
+@import "kriger/main";
+
+$background:#511c44;
+
+$border_Test: 1px solid black;
+$font-family-tahoma: Tahoma;
+
+$logoImg: url(../img/logo.png);
+$colorLogo: red;
+$colorLogo2: black;
+
+$font_ptSans: 'PT Sans', sans-serif;
+
+.header{
+	// margin: 3% 0 0 10%;
+	position: relative;
+	// background: $background no-repeat;
+	background-size: cover;
+	// margin:0 375px 0 375px;
+	
+	.logo{
+		margin: 8px 0 0 0;
+	}
+	.headerMenu{
+		// background: $background no-repeat;
+		position:relative;
+		float: right;
+
+		nav{
+			float:right;
+			margin:35px 0 20px 0;
+
+			.navItem{
+				width:auto;
+				a{
+					font:bold 20px $font_ptSans;
+					white-space: nowrap;
+					color:#505050;
+				}
+				a:hover{
+					text-decoration: none;
+				}
+			}
+		}
+
+		.contacts{
+			position:relative;
+			width:100%;
+			float:right;
+			margin:0 0 20px 0;
+			.contItem{
+				position:relative;
+				text-align:right;	
+				.contLbl{
+
+				}
+				.contLblCallBack{
+					white-space:nowrap;
+					// overflow:hidden;
+					a{
+						width:auto;
+						float:right;
+						font: 18px $font_ptSans;
+						color: #42be5f;
+						text-decoration:underline;
+					}
+				}
+				button{
+					width:100%;
+					min-width:165px;
+					min-height:40px;
+					background:#5bd077;
+					border:none;
+					border-radius: 5px;
+
+					font: 16px $font_ptSans;
+					color:#ffffff;
+				}
+				button:hover{
+					background:#50ba6a;
+				}
+			}
+		}
+	}
+}
+
+@mixin smallScreenHeader{
+	.header{
+		.logo{
+			float:none;
+			text-align:center;
+		}
+		.headerMenu{
+			float:none;
+			nav{
+				text-align:center;
+				float:none;
+				// margin:35px 0 20px 0;
+
+				.navItem{
+					width:auto;
+					a{
+						// white-space: nowrap;
+					}
+					a:hover{
+						text-decoration: none;
+					}
+				}
+			}
+
+			.contacts{
+				position:relative;
+				width:100%;
+				float:none;
+				margin:0 0 20px 0;
+				.contItem{
+					position:relative;
+					text-align:right;	
+					.contLbl{
+						white-space:none;
+						width:100%;
+						label{
+							text-align:center;
+							width:100%;
+							white-space:none;
+						}
+					}
+					.contLblCallBack{
+						white-space:none;
+						a{
+							width:auto;
+							float:none;
+						}
+					}
+					button{
+						width:100%;
+						min-width:165px;
+						min-height:40px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@mixin mediumScreenHeader{
+	@include smallScreenHeader;
+	// .header{
+	// 	.logo{
+
+	// 	}
+	// 	.headerMenu{
+	// 		nav{
+	// 			text-align:center;
+	// 			float:none;
+	// 			// margin:35px 0 20px 0;
+
+	// 			.navItem{
+	// 				width:auto;
+	// 				a{
+	// 					// white-space: nowrap;
+	// 				}
+	// 				a:hover{
+	// 					text-decoration: none;
+	// 				}
+	// 			}
+	// 		}
+
+	// 		.contacts{
+	// 			position:relative;
+	// 			width:100%;
+	// 			float:none;
+	// 			margin:0 0 20px 0;
+	// 			.contItem{
+	// 				position:relative;
+	// 				text-align:right;	
+	// 				.contLbl{
+	// 					white-space:none;
+	// 					width:100%;
+	// 					label{
+	// 						text-align:center;
+	// 						width:100%;
+	// 						white-space:none;
+	// 					}
+	// 				}
+	// 				.contLblCallBack{
+	// 					white-space:none;
+	// 					a{
+	// 						width:auto;
+	// 						float:none;
+	// 					}
+	// 				}
+	// 				button{
+	// 					width:100%;
+	// 					min-width:165px;
+	// 					min-height:40px;
+	// 				}
+	// 			}
+	// 		}
+	// 	}
+	// }
+}
+
+@media screen and (max-width: 320px){
+	@include smallScreenHeader;
+}
+
+@media screen and (min-width: 320px) and(max-width: 600px){
+	@include smallScreenHeader;
+	// .header{
+	// 	.bs-example{
+	// 		max-height:200px;
+	// 	}
+	// }
+}
+
+@media screen and (min-width: 600px) and (max-width: 806px){
+	@include mediumScreenHeader;
+}
+
+@media screen and (min-width: 807px) and (max-width: 991px) {
+	@include mediumScreenHeader;
+}
+
+@media screen and(min-width:  992px) and (max-width: 1060px){
+	
+}

@@ -1,0 +1,188 @@
+
+@import "kriger/main";
+
+$border_Test: 1px solid white;
+// $font_ptSans: 'PT Sans', sans-serif;
+
+.footer{
+	position: relative;
+
+	background: #5bd077;
+	background: -moz-radial-gradient(0deg, ellipse cover, #5bd077, #4e84bf);
+	background: -webkit-linear-gradient(0deg, #5bd077, #4e84bf);
+	background: -o-linear-gradient(0deg, #5bd077, #4e84bf);
+	background: -ms-linear-gradient(0deg, #5bd077, #4e84bf);
+
+	color:#ffffff;
+	
+	.footerMenu, .footerAutor{
+		margin-bottom:0;
+		padding-bottom:0;
+		bottom:0;
+		vertical-align:middle;
+		padding-left:10px;
+	}
+
+	.footerMenu{
+		// .footMenuItem{
+		// 	margin:10px 0;
+		// }
+
+		// a{
+		// 	font: 16px $font_ptSans;
+		// 	color:#ffffff;
+		// 	text-decoration:none;
+		// }
+
+		ul{
+			margin:10px 0;
+			padding-left:15px;
+			li{
+				display:inline;
+				margin-right:28px;
+				
+			}
+			li, li a{
+				font: 16px $font_ptSans;
+				color:#ffffff;
+				text-decoration:none;
+			}
+		}
+
+		
+	}
+
+	.footerAutor{
+		padding-top:10px;
+		padding-bottom:10px;
+		.nameFoot{
+			text-align:left;
+			width: auto;
+			p{
+				white-space: nowrap;
+			}
+		}
+		.logoFoot{
+			text-align:right;
+			width: auto;
+			img{
+				min-width:230px;
+				min-height:60px;
+			}
+		}
+	}
+
+	hr{
+		background:#ffffff;
+		margin:0;
+		padding:0;
+		top:0;
+		bottom:0;
+	}
+}
+
+
+@mixin smallScreenFooter{
+	.footer{
+		text-align: center;
+		.footerMenu, .footerAutor{
+			margin-bottom:0;
+			padding-bottom:0;
+			bottom:0;
+			vertical-align:middle;
+			padding-left:10px;
+		}
+
+		.footerMenu{
+
+			ul{
+				margin:10px 0;
+				padding-left:15px;
+				li{
+					display:block;
+					margin-right:28px;
+					
+				}
+				li, li a{
+					text-decoration:none;
+				}
+			}
+
+			
+		}
+
+		.footerAutor{
+			padding-top:10px;
+			padding-bottom:10px;
+
+			.nameFoot{
+				float:none;
+				width: auto;
+				text-align:center;
+			}
+			.logoFoot{
+				margin-top:20px;
+				margin-bottom:20px;
+				float:none;
+				text-align:center;
+			}
+		}
+	}
+}
+
+@mixin mediumScreenFooter{
+	.footer{
+		text-align: center;
+		.footerMenu, .footerAutor{
+			margin-bottom:0;
+			padding-bottom:0;
+			bottom:0;
+			vertical-align:middle;
+			padding-left:10px;
+		}
+
+		.footerMenu{
+			text-align:left;
+			ul{
+				margin:10px 0;
+				padding-left:15px;
+				li{
+					display:inline-block;
+					margin-right:28px;
+					
+				}
+				li, li a{
+					text-decoration:none;
+				}
+			}
+			
+		}
+
+		.footerAutor{
+			padding-bottom:10px;
+			.nameFoot{
+				width: auto;
+			}
+			.logoFoot{
+
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: 320px) {
+	@include smallScreenFooter;
+}
+
+@media screen and (max-width: 600px){
+	@include smallScreenFooter;
+}
+
+@media screen and (min-width: 601px) and (max-width: 806px){
+	@include mediumScreenFooter;
+}
+
+@media screen and (min-width: 807px) and (max-width: 1100px){
+	@include mediumScreenFooter;
+}
