@@ -80,9 +80,16 @@ $font_ptSans: 'PT Sans', sans-serif;
 
 					font: 16px $font_ptSans;
 					color:#ffffff;
+
+
 				}
-				button:hover{
+				button:hover, button:focus{
 					background:#50ba6a;
+
+					-webkit-transition: all 1s;
+					-moz-transition: all 1s;
+					-o-transition: all 1s;
+					transition: all 1s;
 				}
 			}
 		}
@@ -90,6 +97,10 @@ $font_ptSans: 'PT Sans', sans-serif;
 }
 
 @mixin smallScreenHeader{
+	h1{
+		margin-right: 10px;
+		margin-left:10px;
+	}
 	.header{
 		.logo{
 			float:none;

@@ -5,6 +5,8 @@ $background: none;
 $font_ptSans: 'PT Sans', sans-serif;
 $font_tinos: 'Tinos', serif;
 
+$fontSize_h1_small:24px;
+
 .content{
 	position:relative;
 	margin-top:30px;
@@ -203,13 +205,17 @@ $font_tinos: 'Tinos', serif;
 				height: 35px;
 				font: 16px $font_ptSans;
 				color:#5a6d7f;
+
+				-webkit-transition: all 1s;
+				-moz-transition: all 1s;
+				-o-transition: all 1s;
+				transition: all 1s;
 			}
-			button:hover{
+			button:hover, button:focus{
 				color:#ffffff;
 				background:#5a6d7f;
 			}
 		}
-		
 	}
 
 	.appointment{
@@ -278,9 +284,19 @@ $font_tinos: 'Tinos', serif;
 			border-radius: 5px;
 			font: 20px $font_ptSans;
 			color:#ffffff;
+
+			-webkit-transition: all 1s;
+			-moz-transition: all 1s;
+			-o-transition: all 1s;
+			transition: all 1s;
 		}
-		button:hover{
+		button:hover, button:focus{
 			background:#55ac99;
+
+			-webkit-transition: all 1s;
+			-moz-transition: all 1s;
+			-o-transition: all 1s;
+			transition: all 1s;
 		}
 
 		.leftArrowBtn{
@@ -302,6 +318,7 @@ $font_tinos: 'Tinos', serif;
 
 
 @mixin smallScreenContent{
+
 	.content{
 		.service{
 			position:relative;
@@ -314,11 +331,22 @@ $font_tinos: 'Tinos', serif;
 			.serviceItem{
 				min-height:350px;
 				margin: 0 10px 0 10px;
+
+				h1{
+					font-size:$fontSize_h1_small;
+				}
 			}
 		}
 
 		.feedBack{
 			width:100%;
+			margin-bottom:20px;
+
+			h1{
+				margin-left:10px;
+				margin-right:10px;
+				font-size:$fontSize_h1_small;
+			}
 
 			.feedBackContainer{
 
@@ -345,6 +373,7 @@ $font_tinos: 'Tinos', serif;
 					height:auto;
 					
 					h1{
+						font-size:$fontSize_h1_small;
 					}
 
 					.leftQuote, .rightQuote{
@@ -383,6 +412,10 @@ $font_tinos: 'Tinos', serif;
 				text-align:center;
 				text-transform:uppercase;
 				margin-bottom:0;
+
+				margin-left:10px;
+				margin-right:10px;
+				font-size:$fontSize_h1_small;
 			}
 			p{
 				margin-top:0;
@@ -393,11 +426,16 @@ $font_tinos: 'Tinos', serif;
 		}
 
 		.appointment{
-			padding-top:30px;
+			padding-top:10px;
 			padding-bottom:30px;
 			h1{
-				margin-bottom: 30px;
-				margin-top:30px;
+				// margin-bottom: 30px;
+				margin-top:10px;
+
+				margin-left:10px;
+				margin-right:10px;
+				font-size:$fontSize_h1_small;
+
 			}
 
 			.appointmentItem{
@@ -434,8 +472,13 @@ $font_tinos: 'Tinos', serif;
 				font: 20px $font_ptSans;
 				color:#ffffff;
 			}
-			button:hover{
+			button:hover, button:focus{
 				background:#55ac99;
+
+				-webkit-transition: all 1s;
+				-moz-transition: all 1s;
+				-o-transition: all 1s;
+				transition: all 1s;
 			}
 
 			.leftArrowBtn{
@@ -539,6 +582,7 @@ $font_tinos: 'Tinos', serif;
 			h1{
 				margin-bottom: 30px;
 				margin-top:30px;
+				
 			}
 
 			.appointmentItem{

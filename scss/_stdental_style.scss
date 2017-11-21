@@ -63,7 +63,6 @@ body {font-family: $ftFam1;font-size:$ftSz;line-height:$ftSz+8;color:$cFt;}
 // h4 {text-transform: uppercase; font-weight:700; font-size: $ftSz+4; line-height:20px;  color:#3b3b3b; padding: 10px 0}
 // h5 {text-transform: uppercase; font-size:16px; line-height:20px; border-bottom: 1px solid #ccc; color:#3b3b3b; padding: 10px 0}
 // h6 {text-transform: uppercase; font-weight:700; line-height:20px; color:#3b3b3b; padding: 10px 0}
-
 .title {font-size:30px; line-height: 30px;	margin:10px 0;padding:5px 0;font-weight:700;text-transform: uppercase; text-align: center}
 .title-sm {font-size:30px; line-height: 30px;	margin:10px 0;padding:5px 0;font-weight:700;}
 ul, ol {margin: 0;padding:0;list-style-position: inside}
@@ -223,7 +222,7 @@ input[type="text"], textarea{@include shadow(none);	@include b-radius(0);border:
 .main-slider .nivo-controlNav{text-align:center;}
 .main-slider .nivo-controlNav a{display:inline-block;width:22px;height:22px;/*background:url(../img/bullets.png) no-repeat;*/text-indent:-9999px;border:0;margin:0 2px;}
 .main-slider .nivo-controlNav a.active{background-position:0 -22px;}
-.main-slider .nivo-directionNav a{display:block;width:30px;height:30px;background:url(../img/arrows.png) no-repeat;text-indent:-9999px;border:0;opacity:0;@include trans (all 200ms ease-in-out);}
+.main-slider .nivo-directionNav a{display:block;width:30px;height:30px;background:url(../img/arrowsNivoSlider.png) no-repeat;text-indent:-9999px;border:0;opacity:0;@include trans (all 200ms ease-in-out);}
 .main-slider:hover .nivo-directionNav a{opacity:1;}
 .main-slider a.nivo-nextNav{background-position:-30px 0;right:15px;}
 .main-slider a.nivo-prevNav{left:15px;}
