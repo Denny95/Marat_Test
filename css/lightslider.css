@@ -127,11 +127,11 @@
  transition:opacity .35s linear 0
 }
 .lSAction > .lSPrev {
- background-position:0 0;
+ background-position:-3px -2px;
  left:10px
 }
 .lSAction > .lSNext {
- background-position:-32px 0;
+ background-position:-37px -2px;
  right:10px
 }
 .lSAction > a.disabled {

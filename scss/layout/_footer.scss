@@ -43,14 +43,19 @@ $border_Test: 1px solid white;
 	.footerAutor{
 		padding-top:10px;
 		padding-bottom:10px;
+		.nameFoot, .logoFoot{
+			margin-left: 15px;
+			margin-right:20px;
+		}
 		.nameFoot{
-			text-align:left;
+			float:left;
 			width: auto;
 			p{
 				white-space: nowrap;
 			}
 		}
 		.logoFoot{
+			float:right;
 			text-align:right;
 			width: auto;
 			img{
@@ -71,51 +76,7 @@ $border_Test: 1px solid white;
 
 
 @mixin smallScreenFooter{
-	.footer{
-		text-align: center;
-		.footerMenu, .footerAutor{
-			margin-bottom:0;
-			padding-bottom:0;
-			bottom:0;
-			vertical-align:middle;
-			padding-left:10px;
-		}
-
-		.footerMenu{
-
-			ul{
-				margin:10px 0;
-				padding-left:15px;
-				li{
-					display:block;
-					margin-right:28px;
-					
-				}
-				li, li a{
-					text-decoration:none;
-				}
-			}
-
-			
-		}
-
-		.footerAutor{
-			padding-top:10px;
-			padding-bottom:10px;
-
-			.nameFoot{
-				float:none;
-				width: auto;
-				text-align:center;
-			}
-			.logoFoot{
-				margin-top:20px;
-				margin-bottom:20px;
-				float:none;
-				text-align:center;
-			}
-		}
-	}
+	
 }
 
 @mixin medium_smallScreenFooter{
@@ -201,21 +162,220 @@ $border_Test: 1px solid white;
 
 
 @media screen and (max-width: 320px) {
-	@include smallScreenFooter;
+	.footer{
+		text-align: center;
+		.footerMenu, .footerAutor{
+			margin-bottom:0;
+			padding-bottom:0;
+			bottom:0;
+			vertical-align:middle;
+			padding-left:10px;
+		}
+
+		.footerMenu{
+			ul{
+				margin:10px 0;
+				padding-left:15px;
+				display:block;
+				li{
+					display:block;
+					margin-right:28px;
+					
+				}
+				li, li a{
+					text-decoration:none;
+				}
+			}		
+		}
+
+		.footerAutor{
+			padding-top:10px;
+			padding-bottom:10px;
+
+			.nameFoot{
+				float:none;
+				width: auto;
+				text-align:center;
+			}
+			.logoFoot{
+				float:none;
+				margin-top:20px;
+				margin-bottom:20px;
+				text-align:center;
+			}
+		}
+	}
 }
 
-@media screen and (max-width: 600px){
+@media screen  and (min-width: 321px) and (max-width: 380px){
+	.footer{
+		text-align: center;
+		.footerMenu{
+			ul{
+				text-align:center;
+				li{
+					text-align:center;
+					display:block;
+					margin-right:20px;
+				}
+
+				li, li a{
+					font: 16px $font_ptSans;
+					color:#ffffff;
+					text-decoration:none;
+				}
+			}
+		}
+		.footerAutor{
+			.nameFoot, .logoFoot{
+				float:none;
+				// display:inline-block;
+			}
+			.nameFoot{
+				text-align:center;
+			}
+			.logoFoot{
+				text-align:center;
+			}
+		}
+	}
+}
+
+@media screen  and (min-width: 380px) and (max-width: 600px){
 	@include medium_smallScreenFooter;
+	
+	.footer{
+		.footerMenu{
+			ul{
+				text-align:center;
+				li{
+					text-align:center;
+					display:inline;
+					margin-right:20px;
+				}
+
+				li, li a{
+					font: 16px $font_ptSans;
+					color:#ffffff;
+					text-decoration:none;
+				}
+			}
+		}
+		.footerAutor{
+			.nameFoot, .logoFoot{
+				float:none;
+				// display:inline-block;
+			}
+			.nameFoot{
+				// float:left;
+				text-align:center;
+			}
+			.logoFoot{
+				// float:right;
+				text-align:center;
+			}
+		}
+	}
 }
 
 @media screen and (min-width: 601px) and (max-width: 701px){
 	@include medium_smallScreenFooter;
+	.footer{
+		.footerMenu{
+			ul{
+				text-align:center;
+				li{
+					text-align:center;
+					display:inline;
+					margin-right:30px;
+				}
+
+				li, li a{
+					font: 16px $font_ptSans;
+					color:#ffffff;
+					text-decoration:none;
+				}
+			}
+		}
+		.footerAutor{
+			padding-top:10px;
+			padding-bottom:10px;
+			
+			.nameFoot, .logoFoot{
+				margin:0 30px 0 30px;
+			}
+			.nameFoot{
+				
+			}
+			.logoFoot{
+				
+			}
+		}
+	}
 }
 
-@media screen and (min-width: 601px) and (max-width: 806px){
-	@include medium_smallScreenFooter;
+@media screen and (min-width: 702px) and (max-width: 806px){
+	.footer{
+		.footerMenu{
+			ul{
+				text-align:center;
+				li{
+					text-align:center;
+					display:inline;
+					// margin-right:30px;
+				}
+
+				li, li a{
+					text-decoration:none;
+				}
+			}
+		}
+		.footerAutor{
+			padding-top:10px;
+			padding-bottom:10px;
+			
+			.nameFoot, .logoFoot{
+				margin:0 30px 0 30px;
+			}
+			.nameFoot{
+				
+			}
+			.logoFoot{
+				
+			}
+		}
+	}
 }
 
 @media screen and (min-width: 807px) and (max-width: 1100px){
-	@include mediumScreenFooter;
+	.footer{
+		.footerMenu{
+			ul{
+				text-align:center;
+				li{
+					text-align:center;
+					display:inline;
+					// margin-right:30px;
+				}
+
+				li, li a{
+					text-decoration:none;
+				}
+			}
+		}
+		.footerAutor{
+			padding-top:10px;
+			padding-bottom:10px;
+			
+			.nameFoot, .logoFoot{
+				margin:0 30px 0 30px;
+			}
+			.nameFoot{
+				
+			}
+			.logoFoot{
+				
+			}
+		}
+	}
 }
