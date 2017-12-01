@@ -2,7 +2,6 @@
 @import "kriger/main";
 
 $border_Test: 1px solid white;
-// $font_ptSans: 'PT Sans', sans-serif;
 
 .footer{
 	position: relative;
@@ -36,6 +35,9 @@ $border_Test: 1px solid white;
 				font: 16px $font_ptSans;
 				color:#ffffff;
 				text-decoration:none;
+			}
+			li a:hover{
+				text-decoration:underline;
 			}
 		}
 	}

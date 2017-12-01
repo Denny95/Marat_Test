@@ -18,6 +18,26 @@ $fontSize_h1_small:24px;
 		a{
 			text-decoration:none;
 		}
+
+			.service1{
+				background: #5bd077;
+			}
+			.service2{
+				background:#64dcb9;
+			}
+			.service3{
+				background:#63cecd;
+			}
+			.service4{
+				background:#50aac7;
+			}
+			.service5{
+				background:#4a99c2
+			}
+			.service6{
+				background:#4a88c2;
+			}
+
 		.serviceItem{
 			position:relative;
 			min-height:300px;
@@ -43,11 +63,17 @@ $fontSize_h1_small:24px;
 				font: bold 24px $font_ptSans;
 				color:#ffffff;
 				text-transform:uppercase;
-				margin-bottom:25px;
 				text-decoration:none;
+				white-space: pre-line;
+				
 			}
 			a:hover{
 				text-decoration:underline;
+			}
+
+			.serviceTitle{
+				margin-top:25px;
+				margin-bottom:25px;
 			}
 		}
 	}
@@ -89,7 +115,6 @@ $fontSize_h1_small:24px;
 		padding-bottom:15px;
 		text-align:center;
 		.advantageItem{
-			// width:auto;
 			.advantageItemImg{
 				height:100px;
 			}		
@@ -137,55 +162,6 @@ $fontSize_h1_small:24px;
 			button:hover{
 				background:#4d5f71;
 			}
-		}
-		
-		.feedBackList{
-			width:90%;
-			text-align:center;
-			// .feedBackItem{
-			// 	position:relative;
-			// 	border:1px solid #cccccc;
-			// 	// width:348px;
-			// 	height:275px;
-			// 	// margin: 10px;
-			// 	margin-top:10px;
-			// 	margin-bottom:10px;
-			// 	padding:20px;
-
-
-			// 	p{
-			// 		font: italic 18px $font_ptSans;
-			// 		color:#797979;
-			// 	}
-				
-			// 	h1{
-			// 		position:absolute;
-			// 		font: bold 18px $font_ptSans;
-			// 		color:#4c4c4c;
-			// 		text-transform:none;
-			// 		bottom:0;
-			// 		// right:20px;
-			// 		text-align:center;
-			// 		width:100%;
-			// 		padding-right: 20px;
-			// 	}
-				
-			// 	.leftQuote, .rightQuote{
-			// 		// border:1px solid black;
-			// 		max-height:40px;
-			// 		font: bold 60px $font_tinos;
-			// 		color: #5a6d7f;
-			// 		margin:0 0 0 0;
-			// 		padding:0;
-			// 	}
-
-			// 	.leftQuote{
-			// 		text-align: left;
-			// 	}
-			// 	.rightQuote{
-			// 		text-align:right;
-			// 	}
-			// }
 		}
 
 		h1{
@@ -238,6 +214,23 @@ $fontSize_h1_small:24px;
 				margin-bottom:18px;
 			}
 
+			.appointmentElem_inp1{
+				background-image: url(../img/appoint_sprites.png);
+				background-position: -2px -74px;
+			}
+			.appointmentElem_inp2{
+				background-image: url(../img/appoint_sprites.png);
+				background-position: -2px -114px;
+			}
+			.appointmentElem_inp3{
+				background-image: url(../img/appoint_sprites.png);
+				background-position: -2px -34px;
+			}
+			.appointmentElem_inp4{
+				background-image: url(../img/appoint_sprites.png);
+				background-position: -2px 6px;
+			}
+
 			input {
 				width: 100%;
 				height: 50px;
@@ -245,9 +238,9 @@ $fontSize_h1_small:24px;
 				font:18px $font_ptSans;
 				border:1px solid #d9d9d9;
 
-				background-image: none;   
+				// background-image: none;   
 				background-repeat: no-repeat; /*Убираем повтор изображения*/   
-				background-position: 7.5px 15px; /*Позиционируем*/   
+				// background-position: 7.5px 15px; /*Позиционируем*/   
 				outline: none; /*убираем стандартную обводку браузера*/   
 				-moz-border-radius: 5px; /*закругляем углы для Mozilla*/  
 				-webkit-border-radius: 5px; /*закругляем углы для Chrome, Safari*/   
@@ -265,7 +258,6 @@ $fontSize_h1_small:24px;
 
 				font: 18px $font_ptSans;
 				border: 1px solid #d9d9d9;
-				align:top;
 				resize:none;
 			}
 
@@ -301,17 +293,10 @@ $fontSize_h1_small:24px;
 
 		.leftArrowBtn{
 			background:url(../img/arrowLeft_2.png) no-repeat;
+			background-position:center;
 			border:none;
 			width:30px;
-			height:26px;
-
-		}
-		.leftArrowBtn:hover{
-			background:url(../img/arrowLeft_2.png) no-repeat;
-		}
-
-		redColor{ //для символа *
-			color:#f55656;
+			height:30px;
 		}
 	}
 }

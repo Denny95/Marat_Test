@@ -36,7 +36,7 @@
     margin: 8px 0 0 0; }
   .header .headerMenu {
     position: relative;
-    margin-top: 20px;
+    margin-top: 15px;
     text-align: right; }
     .header .headerMenu nav {
       margin-bottom: 7px;
@@ -63,7 +63,7 @@
         font: bold 20px "PT Sans", sans-serif;
         color: #777; }
       .header .headerMenu nav .navToggle:hover, .header .headerMenu nav .navToggle.focus {
-        color: 505050; }
+        color: #505050; }
   .header .contacts {
     position: relative;
     text-align: right; }
@@ -97,6 +97,26 @@
         font: 16px "PT Sans", sans-serif;
         color: #ffffff; }
       .header .contacts .contItem button:hover, .header .contacts .contItem button:focus {
+        background: #50ba6a;
+        -webkit-transition: all 1s;
+        -moz-transition: all 1s;
+        -o-transition: all 1s;
+        transition: all 1s; }
+      .header .contacts .contItem .appoint {
+        margin-left: auto;
+        margin-right: auto;
+        width: 165px;
+        height: 40px;
+        background: #5bd077;
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+        padding-top: 8px; }
+        .header .contacts .contItem .appoint a {
+          vertical-align: middle;
+          font: 16px "PT Sans", sans-serif;
+          color: #ffffff; }
+      .header .contacts .contItem .appoint:hover, .header .contacts .contItem .appoint:focus {
         background: #50ba6a;
         -webkit-transition: all 1s;
         -moz-transition: all 1s;
@@ -322,7 +342,6 @@
       position: relative;
       text-align: center; }
       .header .contacts .contItem .iconLabel {
-        width-space: nowrap;
         text-align: left;
         width: 160px; }
         .header .contacts .contItem .iconLabel img {
@@ -378,7 +397,7 @@
           font: bold 20px "PT Sans", sans-serif;
           color: #777; }
         .header .headerMenu nav .navToggle:hover, .header .headerMenu nav .navToggle.focus {
-          color: 505050; }
+          color: #505050; }
     .header .contacts {
       float: none;
       position: relative;
@@ -760,6 +779,14 @@
     color: #fff;
     text-decoration: none; }
 
+.lSAction > .lSPrev:hover, .lSAction > .lSPrev:focus, .lSAction > .lSNext:hover, .lSAction > .lSNext:focus {
+  opacity: 2;
+  transition: All 0.5s ease;
+  -webkit-transition: All 0.5s ease;
+  -moz-transition: All 0.5s ease;
+  -o-transition: All 0.5s ease;
+  -ms-transition: All 0.5s ease; }
+
 /*╨Ь╨╛╤П ╤Б╤В╨░╤А╨░╤П ╨║╨░╤А╤Г╤Б╨╡╨╗╤М*/
 .carousel {
   width: 100%;
@@ -968,6 +995,18 @@
     text-align: center; }
     .content .service a {
       text-decoration: none; }
+    .content .service .service1 {
+      background: #5bd077; }
+    .content .service .service2 {
+      background: #64dcb9; }
+    .content .service .service3 {
+      background: #63cecd; }
+    .content .service .service4 {
+      background: #50aac7; }
+    .content .service .service5 {
+      background: #4a99c2; }
+    .content .service .service6 {
+      background: #4a88c2; }
     .content .service .serviceItem {
       position: relative;
       min-height: 300px;
@@ -989,10 +1028,13 @@
         font: bold 24px "PT Sans", sans-serif;
         color: #ffffff;
         text-transform: uppercase;
-        margin-bottom: 25px;
-        text-decoration: none; }
+        text-decoration: none;
+        white-space: pre-line; }
       .content .service .serviceItem a:hover {
         text-decoration: underline; }
+      .content .service .serviceItem .serviceTitle {
+        margin-top: 25px;
+        margin-bottom: 25px; }
   .content .reclame {
     margin-bottom: 50px; }
     .content .reclame p {
@@ -1050,9 +1092,6 @@
       text-align: center; }
     .content .feedBack .feedBackButtL button:hover, .content .feedBack .feedBackButtR button:hover {
       background: #4d5f71; }
-    .content .feedBack .feedBackList {
-      width: 90%;
-      text-align: center; }
     .content .feedBack h1 {
       font: bold 30px "PT Sans", sans-serif;
       color: #505050;
@@ -1090,17 +1129,26 @@
       -webkit-text-fill-color: transparent; }
     .content .appointment .appointmentItem .appointmentElem {
       margin-bottom: 18px; }
+    .content .appointment .appointmentItem .appointmentElem_inp1 {
+      background-image: url(../img/appoint_sprites.png);
+      background-position: -2px -74px; }
+    .content .appointment .appointmentItem .appointmentElem_inp2 {
+      background-image: url(../img/appoint_sprites.png);
+      background-position: -2px -114px; }
+    .content .appointment .appointmentItem .appointmentElem_inp3 {
+      background-image: url(../img/appoint_sprites.png);
+      background-position: -2px -34px; }
+    .content .appointment .appointmentItem .appointmentElem_inp4 {
+      background-image: url(../img/appoint_sprites.png);
+      background-position: -2px 6px; }
     .content .appointment .appointmentItem input {
       width: 100%;
       height: 50px;
       padding-left: 33px;
       font: 18px "PT Sans", sans-serif;
       border: 1px solid #d9d9d9;
-      background-image: none;
       background-repeat: no-repeat;
       /*╨г╨▒╨╕╤А╨░╨╡╨╝ ╨┐╨╛╨▓╤В╨╛╤А ╨╕╨╖╨╛╨▒╤А╨░╨╢╨╡╨╜╨╕╤П*/
-      background-position: 7.5px 15px;
-      /*╨Я╨╛╨╖╨╕╤Ж╨╕╨╛╨╜╨╕╤А╤Г╨╡╨╝*/
       outline: none;
       /*╤Г╨▒╨╕╤А╨░╨╡╨╝ ╤Б╤В╨░╨╜╨┤╨░╤А╤В╨╜╤Г╤О ╨╛╨▒╨▓╨╛╨┤╨║╤Г ╨▒╤А╨░╤Г╨╖╨╡╤А╨░*/
       -moz-border-radius: 5px;
@@ -1112,7 +1160,6 @@
       padding: 12px 0 85px 29px;
       font: 18px "PT Sans", sans-serif;
       border: 1px solid #d9d9d9;
-      align: top;
       resize: none; }
     .content .appointment .appointmentItem p {
       font: 16px "PT Sans", sans-serif;
@@ -1137,13 +1184,10 @@
       transition: all 1s; }
     .content .appointment .leftArrowBtn {
       background: url(../img/arrowLeft_2.png) no-repeat;
+      background-position: center;
       border: none;
       width: 30px;
-      height: 26px; }
-    .content .appointment .leftArrowBtn:hover {
-      background: url(../img/arrowLeft_2.png) no-repeat; }
-    .content .appointment redColor {
-      color: #f55656; }
+      height: 30px; }
 
 @media screen and (max-width: 320px) {
   .content .service {
@@ -1490,6 +1534,8 @@
       font: 16px "PT Sans", sans-serif;
       color: #ffffff;
       text-decoration: none; }
+    .footer .footerMenu ul li a:hover {
+      text-decoration: underline; }
   .footer .footerAutor {
     padding-top: 10px;
     padding-bottom: 10px; }

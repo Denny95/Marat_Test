@@ -35,7 +35,7 @@ $font_ptSans: 'PT Sans', sans-serif;
 	}
 	.headerMenu{
 		position:relative;
-		margin-top:20px;
+		margin-top:15px;
 		text-align:right;
 		nav{
 			margin-bottom:7px;
@@ -76,7 +76,7 @@ $font_ptSans: 'PT Sans', sans-serif;
 				color: #777;
 			}
 			.navToggle:hover, .navToggle.focus{
-				color: 505050;
+				color: #505050;
 			}
 		}
 	}
@@ -87,17 +87,14 @@ $font_ptSans: 'PT Sans', sans-serif;
 		// float:right;
 
 		.contItem{
-			// border:1px solid black;
 
 			position:relative;
-			// text-align:left;
 			text-align:right;
 
 			.iconLabel{
 				text-align:left;
 				width:150px;
 				img{
-					// float:left; 
 					padding-right:10px;
 					padding-left:0;
 					margin-left:0;
@@ -106,7 +103,6 @@ $font_ptSans: 'PT Sans', sans-serif;
 			}
 			.contLblCallBack{
 				white-space:nowrap;
-				// overflow:hidden;
 				a{
 					width:auto;
 					float:right;
@@ -118,6 +114,8 @@ $font_ptSans: 'PT Sans', sans-serif;
 					text-decoration:underline;
 				}
 			}
+			
+
 			button{
 				min-width:165px;
 				min-height:40px;
@@ -127,9 +125,8 @@ $font_ptSans: 'PT Sans', sans-serif;
 
 				font: 16px $font_ptSans;
 				color:#ffffff;
-
-
 			}
+			
 			button:hover, button:focus{
 				background:#50ba6a;
 
@@ -138,7 +135,34 @@ $font_ptSans: 'PT Sans', sans-serif;
 				-o-transition: all 1s;
 				transition: all 1s;
 			}
+			.appoint{
+				// margin-left:30px;
+				margin-left:auto;
+				margin-right:auto;
+				width:165px;
+				height:40px;
+				background:#5bd077;
+				border:none;
+				border-radius: 5px;
+				text-align:center;
+				padding-top:8px;
+				a{
+					vertical-align:middle;
+					font: 16px $font_ptSans;
+					color:#ffffff;
+				}
+			}
+			.appoint:hover, .appoint:focus{
+				background:#50ba6a;
+
+				-webkit-transition: all 1s;
+				-moz-transition: all 1s;
+				-o-transition: all 1s;
+				transition: all 1s;
+			}
 		}
+
+		
 	}
 }
 
@@ -235,6 +259,15 @@ $font_ptSans: 'PT Sans', sans-serif;
 					-moz-transition: all 1s;
 					-o-transition: all 1s;
 					transition: all 1s;
+				}
+
+				.appoint{
+					margin-top:15px;
+					min-width:165px;
+					min-height:40px;
+					background:#5bd077;
+					border:none;
+					border-radius: 5px;
 				}
 			}
 		}
@@ -746,7 +779,6 @@ $font_ptSans: 'PT Sans', sans-serif;
 				text-align:center;
 
 				.iconLabel{
-					width-space:nowrap;
 					text-align:left;
 					width:160px;
 					img{
@@ -831,7 +863,7 @@ $font_ptSans: 'PT Sans', sans-serif;
 				color: #777;
 			}
 			.navToggle:hover, .navToggle.focus{
-				color: 505050;
+				color: #505050;
 			}
 		}
 	}

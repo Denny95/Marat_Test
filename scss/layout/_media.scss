@@ -93,6 +93,11 @@ $cLMain2:#e0f0ff;
         &:hover, &:focus {background: $cDMain2; color:#fff; text-decoration: none;}
 }
 
+.lSAction > .lSPrev:hover, .lSAction > .lSPrev:focus, .lSAction > .lSNext:hover, .lSAction > .lSNext:focus{
+    opacity: 2;
+    @include trans(All 0.5s ease);
+}
+
 
 
 
