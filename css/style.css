@@ -314,9 +314,6 @@
     .header .headerMenu nav {
       float: none;
       margin-bottom: 30px; }
-      .header .headerMenu nav button {
-        float: none;
-        text-align: center; }
       .header .headerMenu nav ul {
         position: relative;
         width: 100%;
